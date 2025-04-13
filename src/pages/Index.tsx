@@ -9,7 +9,7 @@ import { QuestionSection } from "@/components/home/QuestionSection";
 const Index = () => {
   return (
     <div className="bg-white flex flex-col overflow-hidden items-center">
-      <div className="flex w-full flex-col overflow-hidden items-center px-2.5 py-6 max-md:max-w-full">
+      <div className="flex w-full flex-col overflow-hidden items-center px-2.5 py-6 max-md:max-w-full" style={{ background: "linear-gradient(0deg, #45BAD8 0%, #45BAD8 100%)" }}>
         <Header />
         <HeroSection />
       </div>

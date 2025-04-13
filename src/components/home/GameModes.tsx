@@ -2,11 +2,11 @@ import React from "react";
 
 export const GameModes: React.FC = () => {
   return (
-    <section className="bg-white self-stretch flex w-full flex-col overflow-hidden items-center text-center mt-[90px] p-2.5 max-md:max-w-full max-md:mt-10">
+    <section id="competitions" className="bg-white self-stretch flex w-full flex-col overflow-hidden items-center text-center mt-[90px] p-2.5 max-md:max-w-full max-md:mt-10">
       <h2 className="self-stretch gap-2.5 overflow-hidden text-[64px] text-[#4F378B] font-semibold tracking-[0.45px] leading-none px-[21px] py-[23px] max-md:max-w-full max-md:text-[40px] max-md:px-5">
         اختر طريقتك في اللعب
       </h2>
-      <div className="flex items-center gap-2.5 overflow-hidden text-white font-normal justify-center flex-wrap mt-2.5 p-2.5 max-md:max-w-full">
+      <div className="flex items-center gap-2.5 overflow-hidden text-white font-normal justify-center flex-row max-md:flex-wrap mt-2.5 p-2.5 max-w-full py-[36px]">
         <div className="items-center bg-[#21005D] self-stretch flex min-w-60 min-h-[694px] flex-col overflow-hidden w-[740px] my-auto pt-[71px] pb-3 px-2.5 rounded-[128px] max-md:max-w-full">
           <h3 className="text-[57px] leading-none tracking-[-0.25px] max-md:text-[40px]">
             بمفردك
