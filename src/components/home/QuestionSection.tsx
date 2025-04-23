@@ -2,7 +2,7 @@ import React from "react";
 
 export const QuestionSection: React.FC = () => {
   return (
-    <section id="how-to-play" className="bg-white flex items-center gap-2.5 overflow-hidden justify-center flex-row mt-[90px] px-[46px] py-2.5 max-md:max-w-full max-md:mt-10 max-md:px-5 pb-[90px]">
+    <section id="how-to-play" className="bg-white flex flex-row max-sm:flex-col items-center gap-2.5 overflow-hidden justify-center mt-[90px] px-[46px] py-2.5 max-md:max-w-full max-md:mt-10 max-md:px-5 pb-[90px]">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/076504b1d3ea4311a21dce1976e534bb/b97716e6e96dfd7ead80e2c0b73c16c886b6f27d?placeholderIfAbsent=true"
         alt="Questions illustration"

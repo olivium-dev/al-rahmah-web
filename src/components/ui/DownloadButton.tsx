@@ -15,7 +15,7 @@ export const DownloadButton: React.FC<DownloadButtonProps> = ({
 
   return (
     <div
-      className={`items-center bg-[#F9A83C] flex min-w-60 min-h-[100px] gap-2.5 overflow-hidden grow shrink w-52 pl-4 pr-8 rounded-[124px] max-md:pr-6 ${className || ""}`} // Adjusted padding
+      className={`items-center bg-[#F9A83C] flex min-h-[100px] gap-2.5 overflow-hidden grow shrink w-52 pl-4 pr-8 rounded-[124px] max-md:pr-6 ${className || ""}`} // Adjusted padding
     >
       <div className="self-stretch flex min-h-[68px] flex-col overflow-visible items-stretch justify-center w-[168px] my-auto px-2.5">
         <div className="text-base font-medium tracking-[0.15px] whitespace-nowrap mr-2"> {/* Ensure single line */}

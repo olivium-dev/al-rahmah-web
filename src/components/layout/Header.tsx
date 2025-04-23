@@ -46,12 +46,20 @@ export const Header: React.FC = () => {
           className={`${
             isMenuOpen || !isSmallScreen ? "flex" : "hidden"
           } flex-col md:flex-row items-center w-full md:w-auto mt-3 md:mt-0 absolute top-full left-0 bg-transparent md:static md:flex-row md:justify-center`}
+          style={{
+            // Set the background color to blue color
+            backgroundColor: `${isSmallScreen? "var(--M3-sys-light-background, rgb(232, 250, 255))" : "transparent"}`,
+            padding: `${isSmallScreen? "10px" : "0px"}`,
+            borderRadius: `${isSmallScreen? "8px" : "0px"}`,
+            borderColor: `${isSmallScreen? "var(--M3-sys-light-outline,rgb(124, 121, 121))": 'transparent'}`,
+            borderWidth: `${isSmallScreen? "1px" : "0px"}`,
+          }}
         >
           <a
             href="#competitions"
             className="self-stretch w-auto my-auto hover:text-opacity-80 transition-colors text-lg font-medium md:mx-4"
             style={{
-              color: "var(--M3-sys-light-background, #FEF7FF)",
+              color: `"var(--M3-sys-light-background,${isSmallScreen? '#45BAD8' : '#FEF7FF'})"`,
               textAlign: "right",
               fontFamily: "Roboto",
               fontSize: "36px",
@@ -70,7 +78,7 @@ export const Header: React.FC = () => {
             href="#leaderboard"
             className="self-stretch w-auto my-auto hover:text-opacity-80 transition-colors text-lg font-medium md:mx-4"
             style={{
-              color: "var(--M3-sys-light-background, #FEF7FF)",
+              color: `"var(--M3-sys-light-background,${isSmallScreen? '#45BAD8' : '#FEF7FF'})"`,
               textAlign: "right",
               fontFamily: "Roboto",
               fontSize: "36px",
@@ -89,7 +97,7 @@ export const Header: React.FC = () => {
             href="#how-to-play"
             className="self-stretch w-auto my-auto hover:text-opacity-80 transition-colors text-lg font-medium md:mx-4"
             style={{
-              color: "var(--M3-sys-light-background, #FEF7FF)",
+              color: `"var(--M3-sys-light-background,${isSmallScreen? '#45BAD8' : '#FEF7FF'})"`,
               textAlign: "right",
               fontFamily: "Roboto",
               fontSize: "36px",
